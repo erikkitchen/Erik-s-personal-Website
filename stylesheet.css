@@ -1,0 +1,223 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body, html{
+  height: 100%;
+}
+nav{
+  border: 1px solid black;
+  padding: .5em;
+  background-color: rgba(1, 2, 4, 0.9);
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+nav a{
+  font-family: 'Poppins', sans-serif;
+  padding: .5em 1.5em;
+  color: white;
+}
+nav a:link{
+  text-decoration: none;
+}
+nav a:visited{
+  text-decoration: none;
+}
+nav a:hover{
+  color: rgba(201, 201, 201, 1);
+}
+header h1, header p{
+  text-align: center;
+  margin: .4em;
+  vertical-align: middle;
+}
+header h1{
+  font-family: 'Oswald', sans-serif;
+  font-size: 68px;
+}
+header p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+}
+hr{
+  width: 25%;
+  margin: auto;
+}
+header{
+  background:linear-gradient(rgba(1, 2, 4, 0.1),rgba(1, 2, 4, .9)),url(img/web-design-background.jpg);
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+}
+#profile, #skills{
+  background-color: rgb(255, 245, 238);
+  background-size: cover;
+  height: 100%;
+  overflow: auto;
+}
+#profile h1, #portfolio h1, #skills h1, #contact_me h1{
+  font-family: 'Poppins', sans-serif;
+  color: rgb(255, 99, 71);
+  font-size: 48px;
+  margin-top: 1.5em;
+}
+.sub_title{
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: rgb(112, 128, 144);
+  margin-bottom: 1em;
+}
+#profile h1, #portfolio h1, #skills h1, #contact_me h1, .sub_title{
+  text-align: center;
+}
+#profile img{
+  border-radius: 50%;
+  margin: 2em auto;
+  display: block;
+  border: 5px solid rgb(135, 206, 235);
+}
+.info{
+  text-align: center;
+}
+.info h1, h2, h3{
+  font-family: 'Poppins', sans-serif;
+  color: rgb(255, 99, 71);
+  margin-bottom: .5em;
+}
+#portfolio{
+  background-color: rgb(176, 196, 222);
+  background-size: cover;
+  height: 100%;
+  overflow: auto;
+}
+.info p{
+  font-size: 18px;
+  margin: 1.5em 2em;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2em 15%;
+}
+.column{
+  display: inline-block;
+}
+.column img{
+  width: 20em;
+  margin: .93em .93em;
+}
+.column a{
+  text-decoration: none;
+}
+.column a p:hover{
+  color: rgb(112, 128, 144);
+}
+.column p{
+  font-family: 'Poppins', sans-serif;
+  color: rgb(255, 99, 71);
+}
+.coding_skills{
+  text-align: center;
+}
+.star{
+  background: url(img/filled_star.png);
+  background-size: cover;
+}
+.unstar{
+  background: url(img/empty_star.png);
+  background-size: cover;
+}
+.half-star{
+  background: url(img/half_star.png);
+  background-size: cover;
+}
+.star, .unstar, .half-star{
+  width: 1em;
+  height: 1em;
+}
+.rating{
+  display: inline-block;
+  font-size: 30px;
+  margin-top: 20px;
+}
+#contact_me{
+  background-color: rgb(128, 128, 128);
+  background-size: cover;
+  height: 100%;
+  overflow: auto;
+}
+#contact_me ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+#contact_me li img{
+  width: 1em;
+  height: 1em;
+}
+#contact_me li{
+  display: inline-block;
+  list-style: none;
+}
+#contact_me li p{
+  font-size: 1em;
+  margin: 1em;
+}
+#contact_me li img, #contact_me li p{
+  display: inline-block;
+}
+#contact_me li a{
+  text-decoration: none;
+  color: inherit;
+}
+.back_to_top{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  font-size: 1.5em;
+}
+.back_to_top a{
+  text-decoration: none;
+  color: inherit;
+}
+#contact_me li a:hover, .back_to_top a:hover{
+  color: rgba(201, 201, 201, 1);
+}
+@media only screen and (max-width:703px) {
+nav, nav a{
+  margin: 0;
+  padding: 0;
+}
+nav{
+  line-height: 1;
+}
+nav a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+  border-style: solid;
+  border-width: 0 0 1px;
+  width: 100%;
+  text-align: center;
+}
+.star, .unstar, .half-star{
+  width: .6em;
+  height: .6em;
+}
+.rating{
+  display: inline-block;
+  font-size: 25px;
+  margin-top: 20px;
+}
